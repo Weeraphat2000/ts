@@ -519,3 +519,16 @@ const userReturn3 = (y: number, ...x: number[]): void => {
   console.log(x, y);
 };
 userReturn3(1, 2, 3, 4, 5);
+
+const a12 = {
+  name: "hun",
+  age: 22,
+};
+Object.assign(a12, { name: "weera", address: "123" });
+console.log(a12, "a12");
+
+const a14 = { ...a12, name: "weera", address: "123" };
+console.log(a14, "a14");
+const a15 = [1, 2, 3, 4, 5];
+const a16 = [...a15, 6, 7, 8, 9];
+console.log(a16, "a16");

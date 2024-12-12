@@ -400,3 +400,24 @@ function testhun2(u) {
 }
 const testhun3 = testhun2({ name: "asd", array: ["asd", "asd"] });
 testhun3.name.length;
+const userReturn2 = (y, ...x) => {
+    console.log(x, y);
+};
+userReturn2(1, 2, 3, 4, 5);
+//
+//
+const userReturn3 = (y, ...x) => {
+    console.log(x, y);
+};
+userReturn3(1, 2, 3, 4, 5);
+const a12 = {
+    name: "hun",
+    age: 22,
+};
+Object.assign(a12, { name: "weera", address: "123" });
+console.log(a12, "a12");
+const a14 = Object.assign(Object.assign({}, a12), { name: "weera", address: "123" });
+console.log(a14, "a14");
+const a15 = [1, 2, 3, 4, 5];
+const a16 = [...a15, 6, 7, 8, 9];
+console.log(a16, "a16");
