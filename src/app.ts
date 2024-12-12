@@ -504,3 +504,18 @@ function testhun2<q>(u: q) {
 }
 const testhun3 = testhun2({ name: "asd", array: ["asd", "asd"] });
 testhun3.name.length;
+
+interface UserReturn2 {
+  (y: number, ...x: number[]): void;
+}
+const userReturn2: UserReturn2 = (y: number, ...x: number[]): void => {
+  console.log(x, y);
+};
+userReturn2(1, 2, 3, 4, 5);
+
+//
+//
+const userReturn3 = (y: number, ...x: number[]): void => {
+  console.log(x, y);
+};
+userReturn3(1, 2, 3, 4, 5);
