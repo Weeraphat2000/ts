@@ -421,3 +421,12 @@ console.log(a14, "a14");
 const a15 = [1, 2, 3, 4, 5];
 const a16 = [...a15, 6, 7, 8, 9];
 console.log(a16, "a16");
+const us = {
+    username: "hun",
+    age: 22,
+    address: "123",
+};
+function functionUs(a) {
+    return "asdfasdf";
+}
+console.log(functionUs(us));

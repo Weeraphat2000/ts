@@ -532,3 +532,33 @@ console.log(a14, "a14");
 const a15 = [1, 2, 3, 4, 5];
 const a16 = [...a15, 6, 7, 8, 9];
 console.log(a16, "a16");
+
+const us = {
+  username: "hun",
+  age: 22,
+  address: "123",
+};
+
+const { test1, test2, test3 } = functionUs(us); // destructuring
+console.log(test1, test2, test3);
+
+interface inputFunctionUs {
+  username: string;
+  age: number;
+}
+interface returnFunctionUs {
+  test1: string;
+  test2: string;
+  test3: string;
+}
+
+function functionUs(a: inputFunctionUs): returnFunctionUs {
+  console.log(a.age, a.username);
+  return {
+    test1: "test1",
+    test2: "test2",
+    test3: "test3",
+  };
+}
+
+console.log(functionUs(us)); // object ส่งเข้ามาเกินได้ไม่เป็นไร
